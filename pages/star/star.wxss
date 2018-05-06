@@ -1,0 +1,251 @@
+/* pages/star/star.wxss */
+
+@import "/lib/icon-font.wxss";
+@import "/app.wxss";
+.header {
+  background-color: #c0b286;
+  width: 100%;
+  height: 84rpx;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .icon {
+  color: #fff;
+}
+
+.header .title {
+  color: #fff;
+}
+
+.header .l::after {
+  font-family: "iconfont";
+  content: "\e605";
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-left: 10rpx
+}
+
+.header .r::after {
+  font-family: "iconfont";
+  content: "\e641";
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-right: 10rpx
+}
+
+swiper {
+  height: 300rpx;
+  width: 100%;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+.classify {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.classify-item {
+  width: 25%;
+  float: left;
+  background: #fff;
+  padding: 16rpx 0;
+}
+
+.classify-item:first-child .icon::after {
+  font-family: "iconfont";
+  content: "\e641";
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.classify-item:nth-child(2) .icon::after {
+  font-family: "iconfont";
+  content: "\e609";
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.classify-item:nth-child(3) .icon::after {
+  font-family: "iconfont";
+  content: "\e601";
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.classify-item:last-child .icon::after {
+  font-family: "iconfont";
+  content: "\e65b";
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.classify-item text {
+  font-size: 24rpx;
+}
+
+.intro {
+  height: 120rpx;
+  width: 100%;
+}
+
+.intro image {
+  width: 100%;
+  height: 100%;
+}
+
+.recommend {
+  background: #fff;
+}
+
+.recommend .title {
+  font-size: 22rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.title text:first-child {
+  float: left;
+}
+
+.title text:last-child {
+  float: right;
+}
+
+.recommend-con {
+  overflow: hidden;
+}
+
+.con-bg image {
+  width: 100%;
+}
+
+.recommend-con block {
+  overflow: hidden;
+}
+
+.recommend .con-item {
+  float: left;
+  width: 33%;
+  text-align: center;
+  border-right: 1rpx solid #c3c3c3;
+}
+
+.recommend .con-item image {
+  height: 300rpx;
+}
+
+.recommend .con-item text {
+  font-size: 24rpx;
+  display: inline-block;
+  background: #c3c3c3;
+  height: 44rpx;
+  vertical-align: middle;
+  color: #fff;
+  width: 100%;
+}
+
+.youhui .title {
+  font-size: 22rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.youhui .title text {
+  float: left;
+}
+
+.youhui-con {
+  overflow: hidden;
+  margin-top: 6rpx;
+}
+
+.youhui-con .con-item {
+  background: #fff;
+  width: calc((100% / 2) - 16rpx);
+  float: left;
+  text-align: center;
+  margin: 8rpx;
+}
+
+.youhui-con text {
+  text-align: left;
+  font-size: 22rpx;
+  margin-left: 10rpx;
+  display: block;
+}
+
+.youhui-con text.miaoshu {
+  color: #fff;
+  background: #c0b286;
+}
+
+.more {
+  background: #fff;
+  border: 2rpx solid #000;
+  width: 140rpx;
+  height: 48rpx;
+  margin: 0 auto;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.more text {
+  font-size: 24rpx;
+}
+
+.star {
+  margin: 20rpx 0;
+}
+
+.star .title {
+  background: #fff;
+  font-size: 22rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.star .title text:first-child {
+  float: left;
+}
+
+.star .title text:last-child {
+  float: right;
+}
+
+.star-con {
+  overflow: hidden;
+  background: #fff;
+  padding: 20rpx 0;
+}
+
+.star-con .con-item {
+  width: 33.33333%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  margin: 10rpx 0;
+}
+
+.star-con image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.star-con text {
+  font-size: 24rpx;
+}

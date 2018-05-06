@@ -1,0 +1,80 @@
+<!--pages/star/star.wxml-->
+<view class="container">
+    <view class="header">
+        <view class="icon l">
+        </view>
+        <view class="title">
+            <text>星盟网 明星汇聚地</text>
+        </view>
+        <view class="icon r">
+        </view>
+    </view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="img">
+            <swiper-item>
+                <image src="{{item.url}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="classify">
+        <block wx:for="{{classify}}" wx:key="classify">
+            <view class="classify-item">
+                <view class="icon"> </view>
+                <text>{{item.text}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="intro">
+        <image src="/lib/images/download.png" />
+    </view>
+    <view class="recommend">
+        <view class="title">
+            <text>明星推荐</text><text>...</text>
+        </view>
+        <view class="recommend-con">
+            <view class="con-bg">
+                <image src="/lib/images/2.jpg" />
+            </view>
+            <block wx:for="{{clothes}}" wx:key="clothes">
+                <view class="con-item">
+                    <image src="{{item.img}}" class="slide-image" />
+                    <text>{{item.text}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="youhui">
+        <view class="title">
+            <text>今日优惠</text>
+        </view>
+        <view class="youhui-con">
+            <block wx:for="{{youhui}}" wx:key="youhui">
+                <view class="con-item">
+                    <image src="{{item.img}}" class="slide-image" />
+                    <text class="miaoshu">{{item.miaoshu}}</text>
+                    <text>{{item.text}}</text>
+                    <text>￥{{item.price}}</text>
+
+                </view>
+            </block>
+        </view>
+        <view class="more">
+            <text>MORE</text>
+        </view>
+    </view>
+    <view class="star">
+         <view class="title">
+            <text>主打星</text><text>...</text>
+        </view>
+        <view class="star-con">
+            <block wx:for="{{star}}" wx:key="youhui">
+                <view class="con-item">
+                    <image src="{{item.imgs}}" class="slide-image" />
+                   <view>
+                       <text>{{item.name}}</text>
+                   </view> 
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
