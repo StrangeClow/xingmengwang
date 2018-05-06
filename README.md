@@ -4,4 +4,4 @@ zh
 
 谢谢  
 
-![Image text] (https://github.com/StrangeClow/xingmengwang/blob/master/img/1.png)
+![Image](https://github.com/StrangeClow/xingmengwang/blob/master/img/1.png)
