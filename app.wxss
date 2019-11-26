@@ -13,3 +13,7 @@ page {
   background-color: #ededed;
 }
 
+.box-inner {
+  display: flex;
+}
+
