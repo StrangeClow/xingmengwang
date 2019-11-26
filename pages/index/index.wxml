@@ -11,5 +11,6 @@
     <text class="user-motto">{{motto}}</text>
     <text class="user-motto">1. git stash</text>
     <text class="user-motto">2. git rebase</text>
+    <text class="user-motto">2. git mrege</text>
   </view>
 </view>
