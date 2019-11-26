@@ -18,6 +18,7 @@ page {
 }
 .box-wrapper {
   display: flexbox;
+  align-items: center;
 }
 
 
