@@ -16,4 +16,8 @@ page {
 .box-inner {
   display: flex;
 }
+.box-wrapper {
+  display: flexbox;
+}
+
 
